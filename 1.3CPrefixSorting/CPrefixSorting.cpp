@@ -123,3 +123,11 @@ private:
 	int* m_ReverseCakeArraySwap;
 	int m_nSearch;
 };
+
+void main() {
+	CPrefixSorting x;
+	int a[10] = { 3,2,1,6,5,4,9,8,7,0 };
+	int cnt = 10;
+	x.Run(a, cnt);
+	x.Output();
+}
