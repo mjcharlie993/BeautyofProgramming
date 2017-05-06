@@ -37,3 +37,15 @@ return (nTargetFloor, nMinFloor);
 
 
 // #3 Median
+int nPerson[];
+int nTargetFloor;
+int left = 1; right = N;
+while (right - left > 1) {
+    while (nPerson[left] == 0)
+        left++;
+    nPerson[left]--;
+    while (nPerson[right] == 0)
+        right--;
+    nPerson[right]--;
+}
+return left;
